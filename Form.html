@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Maciel Oliveira" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sobre Formulários</h1>
+    <!--GET é um método de enviar arquivos, é o método default -->
+    <!--POST é um método de criar arquivos-->
+    <!--Não pode criar um form dentro de outro form-->
+    <form id="cadastro" action="" method="GET">
+      <fieldset>
+        <!--Se no fieldset colocar "disable" não conseguimos editar os campos -->
+        <legend>Contato</legend>
+        <label for="name">Nome:</label>
+        <input id="nome" type="text" value="Insira seu nome" />
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <!--Se inserir o type="reset", limpa os campos-->
+      <!--Alguns atributos do button
+    type
+    submit
+    button
+    autofocus
+    disable
+    name
+    value
+    form-->
+    </form>
+  </body>
+</html>
+
+<!--No caso do fieldset estar fora do form, faz este procedimento-->
+<fieldset id="cadastro">
+  <legend>Informações Adicionais</legend>
+  <label for="veículo">Veículo:</label>
+  <input type="text" value="Prencha se possuir veículo" />
+</fieldset>
+
+<h2>Frutas</h2>
+<select name="fruta" id="fruta">
+  <option value=""></option>
+  <option value="acerola">Acerola</option>
+  <option value="abacaxi">Abacaxi</option>
+  <option value="acai">Açaí</option>
+  <option value="amora">Amora</option>
+  <!--Neste caso, posso usar select ou datalist-->
+  <!--datalist aceita cores em hexadecimais-->
+</select>
